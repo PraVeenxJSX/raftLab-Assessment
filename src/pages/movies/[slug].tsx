@@ -30,12 +30,17 @@ export default function MoviePage({ movie }: MoviePageProps) {
         );
     }
 
+    const siteUrl = process.env.NEXT_PUBLIC_VERCEL_URL
+        ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+        : 'http://localhost:3000';
+    const fullImageUrl = `${siteUrl}${movie.poster}`;
+
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Movie',
         name: movie.title,
         description: movie.description,
-        image: movie.poster,
+        image: fullImageUrl,
         datePublished: movie.releaseYear.toString(),
         director: {
             '@type': 'Person',
@@ -45,25 +50,26 @@ export default function MoviePage({ movie }: MoviePageProps) {
             '@type': 'AggregateRating',
             ratingValue: movie.rating.toString(),
             bestRating: '10',
-            ratingCount: '1000', // Mock count
+            ratingCount: '1000',
         },
         genre: movie.genres,
     };
 
     return (
         <Layout>
+            <Head>
+                <title>{`${movie.title} | RaftLabs Movies`}</title>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+            </Head>
             <SeoHead
                 title={movie.title}
                 description={movie.description.substring(0, 160)}
                 image={movie.poster}
                 type="video.movie"
             />
-            <Head>
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-                />
-            </Head>
 
             <div className="max-w-4xl mx-auto">
                 <div className="flex flex-col md:flex-row gap-8">

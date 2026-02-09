@@ -9,9 +9,14 @@ interface HomeProps {
   content: Content[];
 }
 
+import Head from 'next/head';
+
 export default function Home({ content }: HomeProps) {
   return (
     <Layout>
+      <Head>
+        <title>Home | RaftLabs Movies</title>
+      </Head>
       <SeoHead
         title="Home"
         description="Discover the best Movies and TV Series. Browse our curated collection of top-rated entertainment."

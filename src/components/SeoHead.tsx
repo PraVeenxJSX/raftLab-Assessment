@@ -16,7 +16,6 @@ export default function SeoHead({ title, description, image, type = 'website' }:
 
     return (
         <Head>
-            <title>{title} | RaftLabs Movies</title>
             <meta name="description" content={description} />
             <link rel="canonical" href={fullUrl} />
 

@@ -30,12 +30,17 @@ export default function SeriesPage({ series }: SeriesPageProps) {
         );
     }
 
+    const siteUrl = process.env.NEXT_PUBLIC_VERCEL_URL
+        ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+        : 'http://localhost:3000';
+    const fullImageUrl = `${siteUrl}${series.poster}`;
+
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'TVSeries',
         name: series.title,
         description: series.description,
-        image: series.poster,
+        image: fullImageUrl,
         datePublished: series.releaseYear.toString(),
         creator: {
             '@type': 'Person',
@@ -60,6 +65,7 @@ export default function SeriesPage({ series }: SeriesPageProps) {
                 type="video.tv_show"
             />
             <Head>
+                <title>{`${series.title} | RaftLabs Movies`}</title>
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
