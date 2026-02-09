@@ -4,9 +4,10 @@ import { Content } from '@/types';
 
 interface MovieCardProps {
     item: Content;
+    priority?: boolean;
 }
 
-export default function MovieCard({ item }: MovieCardProps) {
+export default function MovieCard({ item, priority = false }: MovieCardProps) {
     const href = item.type === 'movie' ? `/movies/${item.slug}` : `/series/${item.slug}`;
 
     return (
@@ -16,6 +17,7 @@ export default function MovieCard({ item }: MovieCardProps) {
                     src={item.poster}
                     alt={item.title}
                     fill
+                    priority={priority}
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
