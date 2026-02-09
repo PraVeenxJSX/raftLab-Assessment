@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Inception",
+        "slug": "inception",
+        "releaseYear": 2010,
+        "rating": 8.8,
+        "genres": [
+            "Sci-Fi",
+            "Thriller",
+            "Action"
+        ],
+        "director": "Christopher Nolan",
+        "duration": "148 min",
+        "poster": "/images/movies/inception.jpg",
+        "description": "Inception is a science fiction thriller that explores the concept of dreams within dreams, where a skilled thief is given a chance at redemption if he can successfully perform inception."
+    },
+    {
+        "id": 2,
+        "title": "Interstellar",
+        "slug": "interstellar",
+        "releaseYear": 2014,
+        "rating": 8.6,
+        "genres": [
+            "Sci-Fi",
+            "Drama",
+            "Adventure"
+        ],
+        "director": "Christopher Nolan",
+        "duration": "169 min",
+        "poster": "/images/movies/interstellar.jpg",
+        "description": "Interstellar follows a group of astronauts who travel through a wormhole in search of a new home for humanity as Earth faces environmental collapse."
+    },
+    {
+        "id": 3,
+        "title": "The Dark Knight",
+        "slug": "the-dark-knight",
+        "releaseYear": 2008,
+        "rating": 9.0,
+        "genres": [
+            "Action",
+            "Crime",
+            "Drama"
+        ],
+        "director": "Christopher Nolan",
+        "duration": "152 min",
+        "poster": "/images/movies/the-dark-knight.jpg",
+        "description": "The Dark Knight portrays Batman's struggle to maintain order in Gotham City as the Joker unleashes chaos and tests the hero’s moral limits."
+    },
+    {
+        "id": 4,
+        "title": "Avatar",
+        "slug": "avatar",
+        "releaseYear": 2009,
+        "rating": 7.8,
+        "genres": [
+            "Sci-Fi",
+            "Fantasy",
+            "Adventure"
+        ],
+        "director": "James Cameron",
+        "duration": "162 min",
+        "poster": "/images/movies/avatar.jpg",
+        "description": "Avatar is a visually stunning science fiction film set on the alien world of Pandora, where humans clash with the native Na'vi over resources."
+    },
+    {
+        "id": 5,
+        "title": "Gladiator",
+        "slug": "gladiator",
+        "releaseYear": 2000,
+        "rating": 8.5,
+        "genres": [
+            "Action",
+            "Drama",
+            "History"
+        ],
+        "director": "Ridley Scott",
+        "duration": "155 min",
+        "poster": "/images/movies/gladiator.jpg",
+        "description": "Gladiator tells the story of a betrayed Roman general who seeks revenge against the corrupt emperor who murdered his family."
+    }
+]

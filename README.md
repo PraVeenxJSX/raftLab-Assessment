@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# RaftLabs Movies App
 
-## Getting Started
+A Next.js application for browsing movies and TV series, featuring a modern UI with Tailwind CSS v4 and comprehensive SEO implementation.
 
-First, run the development server:
+## 🚀 How to Run
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
+    The app will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+3.  **Build for Production**:
+    ```bash
+    npm run build
+    npm run start
+    ```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 🛠️ Tech Stack & Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+-   **Framework**: Next.js 16 (Pages Router)
+-   **Styling**: Tailwind CSS v4
+-   **Language**: TypeScript
+-   **Deployment**: Render.com
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📊 Data Sources
 
-## Learn More
+The application uses local JSON data to simulate a backend:
 
-To learn more about Next.js, take a look at the following resources:
+-   `src/data/movies.json`: Contains movie data (Inception, Interstellar, The Dark Knight, etc.).
+-   `src/data/series.json`: Contains TV series data (Breaking Bad, Game of Thrones, etc.).
+-   **Images**: All media assets are served locally from `public/images/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 🔍 SEO Implementation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project implements SEO best practices using a reusable `SeoHead` component:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+-   **Meta Tags**: Unique title and description for every page.
+-   **Open Graph (OG)**: Optimized for social sharing (Facebook, LinkedIn, etc.) with dynamic images and descriptions.
+-   **Twitter Cards**: Large summary cards for Twitter sharing.
+-   **Structured Data (JSON-LD)**:
+    -   `Movie` schema for movie detail pages.
+    -   `TVSeries` schema for series detail pages.
+-   **Semantic HTML**: Proper use of `<header>`, `<main>`, `<section>`, and `<h1>` tags.

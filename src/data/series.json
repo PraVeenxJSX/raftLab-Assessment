@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "title": "Breaking Bad",
+        "slug": "breaking-bad",
+        "releaseYear": 2008,
+        "seasons": 5,
+        "rating": 9.5,
+        "genres": [
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "creator": "Vince Gilligan",
+        "poster": "/images/series/breaking-bad.jpg",
+        "description": "Breaking Bad follows a high school chemistry teacher who turns to manufacturing drugs after being diagnosed with cancer."
+    },
+    {
+        "id": 2,
+        "title": "Game of Thrones",
+        "slug": "game-of-thrones",
+        "releaseYear": 2011,
+        "seasons": 8,
+        "rating": 9.2,
+        "genres": [
+            "Fantasy",
+            "Drama",
+            "Adventure"
+        ],
+        "creator": "David Benioff & D.B. Weiss",
+        "poster": "/images/series/game-of-thrones.jpg",
+        "description": "Game of Thrones is an epic fantasy series that chronicles the struggle for power among noble families in the fictional land of Westeros."
+    },
+    {
+        "id": 3,
+        "title": "Stranger Things",
+        "slug": "stranger-things",
+        "releaseYear": 2016,
+        "seasons": 4,
+        "rating": 8.7,
+        "genres": [
+            "Sci-Fi",
+            "Horror",
+            "Drama"
+        ],
+        "creator": "The Duffer Brothers",
+        "poster": "/images/series/stranger-things.jpg",
+        "description": "Stranger Things centers around a group of children who encounter supernatural forces and secret experiments in their small town."
+    },
+    {
+        "id": 4,
+        "title": "The Office",
+        "slug": "the-office",
+        "releaseYear": 2005,
+        "seasons": 9,
+        "rating": 8.9,
+        "genres": [
+            "Comedy"
+        ],
+        "creator": "Greg Daniels",
+        "poster": "/images/series/the-office.jpg",
+        "description": "The Office is a mockumentary sitcom that depicts the everyday work lives of employees in a paper company."
+    },
+    {
+        "id": 5,
+        "title": "Sherlock",
+        "slug": "sherlock",
+        "releaseYear": 2010,
+        "seasons": 4,
+        "rating": 9.1,
+        "genres": [
+            "Crime",
+            "Drama",
+            "Mystery"
+        ],
+        "creator": "Steven Moffat & Mark Gatiss",
+        "poster": "/images/series/sherlock.jpg",
+        "description": "Sherlock is a modern adaptation of Sherlock Holmes, solving complex crimes in contemporary London."
+    }
+]
